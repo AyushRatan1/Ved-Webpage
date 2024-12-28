@@ -12,6 +12,7 @@ import Pincontainer from "./components/AnimatedPinDemo";
 import Intro from "./components/intro";
 import ContainerScroll from "./components/HeroScrollDemo";
 import Tabs from "./components/TabsDemo";
+import { Analytics } from "@vercel/analytics/react"
 const App = () => {
   return (
     <>
@@ -32,6 +33,7 @@ const App = () => {
         <Footer />
       </div>
       <ButtonGradient />
+      <Analytics/>
     </>
   );
 };
