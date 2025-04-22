@@ -12,6 +12,7 @@ import Pincontainer from "./components/AnimatedPinDemo";
 import Intro from "./components/intro";
 import ContainerScroll from "./components/HeroScrollDemo";
 import Tabs from "./components/TabsDemo";
+import FeatureContext from "./components/FeatureContext";
 import { Analytics } from "@vercel/analytics/react"
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Header />
 
         <Intro />
+        <FeatureContext />
         <Pincontainer />
         <ContainerScroll />
         <Roadmap />

@@ -43,7 +43,7 @@ export const navigation = [
   { id: "2", title: "How to use", url: "#how-to-use" },
   { id: "3", title: "Roadmap", url: "#roadmap" },
   { id: "4", title: "New account", url: "#signup", onlyMobile: true },
-  { id: "5", title: "Sign in", url: "https://ved-ai-front.vercel.app/" },
+  { id: "5", title: "Waitlist", url: "https://v0-product-launch-waitlist-eight-chi.vercel.app/" },
 ];
 
 // Hero section icons
@@ -57,9 +57,10 @@ export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 // Ved AI-specific services
 export const vedAiServices = [
-  "Personalized learning content",
-  "Dynamic profile enhancement",
-  "Content generation and customization",
+  "Multilingual support including regional Indian dialects",
+  "Personalized pedagogy adapting to individual learning styles",
+  "Dynamic curriculum that evolves as you progress",
+  "Teacher-AI symbiosis for enhanced learning experiences",
 ];
 
 // Icons for Ved AI services
@@ -75,8 +76,8 @@ export const vedAiServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Multi-language support",
-    text: "Enable the AI to support multiple Indian languages for a more inclusive learning experience.",
+    title: "Multilingual & Inclusive Learning",
+    text: "Support for multiple languages, including regional Indian dialects, making learning accessible to diverse populations.",
     date: "2024",
     status: "done",
     imageUrl: roadmap1,
@@ -84,24 +85,24 @@ export const roadmap = [
   },
   {
     id: "1",
-    title: "Enhanced personal profile insights",
-    text: "Improve user profiling to provide more personalized and adaptive learning recommendations.",
+    title: "Personalized Pedagogy Model",
+    text: "AI system that adapts to each learner's unique needs, learning style, and pace for truly personalized education.",
     date: "2024",
     status: "progress",
     imageUrl: roadmap2,
   },
   {
     id: "2",
-    title: "Gamified learning experience",
-    text: "Add gamified elements, such as badges and rewards, to increase engagement and motivation.",
+    title: "Dynamic Curriculum Tailoring",
+    text: "Course materials continuously adapted by AI, generating custom quizzes, mind maps, and explanations based on individual progress.",
     date: "2024",
     status: "planned",
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "Integration with external knowledge sources",
-    text: "Allow Ved AI to access diverse content sources for more enriched learning recommendations.",
+    title: "Teacher-AI Symbiosis",
+    text: "Creating a personalized tutoring experience that reaches beyond geographic and socioeconomic boundaries.",
     date: "2024",
     status: "progress",
     imageUrl: roadmap4,
@@ -141,7 +142,7 @@ export const pricing = [
     features: [
       "AI-assisted tutoring for fundamental topics",
       "Basic customization of learning paths",
-      "Access to the app’s basic features at no cost",
+      "Access to the app's basic features at no cost",
     ],
   },
   {
@@ -172,16 +173,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Allows students to quickly find answers to learning questions without extensive searching.",
+    title: "Personalized Pedagogy",
+    text: "Our AI-powered system adapts to each learner's unique needs, learning style, and pace.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Continuous learning",
-    text: "Uses advanced AI to support adaptive learning and provide relevant content over time.",
+    title: "Multilingual Support",
+    text: "With support for multiple languages, including regional Indian dialects, learning is accessible to diverse populations.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -189,16 +190,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Accessible anywhere",
-    text: "Enables access to Ved AI on any device, making learning more convenient.",
+    title: "Dynamic Curriculum",
+    text: "Course materials continuously adapted by AI, diagnosing strengths and gaps to create custom learning pathways.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Real-time responses",
-    text: "Provides fast and accurate responses to support timely learning.",
+    title: "Teacher-AI Symbiosis",
+    text: "Combining human expertise with AI to deliver personalized tutoring that reaches beyond geographic boundaries.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -206,8 +207,8 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Comprehensive support",
-    text: "Assists with a wide range of educational topics for a complete learning experience.",
+    title: "Inclusive Learning",
+    text: "Breaking down barriers to ensure quality education is accessible regardless of socioeconomic background.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,

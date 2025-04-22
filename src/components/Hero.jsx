@@ -25,9 +25,9 @@ function Hero() {
       >
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
           <h1 className="h1 mb-6">
-            Explore the Power of Personalized Learning with{" "}
+            Personalized Learning Through Teacher-AI{" "}
             <span className="inline-block relative">
-              Ved AI{" "}
+              Symbiosis{" "}
               <img
                 src={curve}
                 alt="curve"
@@ -40,8 +40,9 @@ function Hero() {
         </div>
         <div className="text-center z-10">
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Unleash your potential with Ved AI. Experience tailored learning and
-            growth through our advanced AI-driven platform.
+            Ved AI combines human expertise with advanced AI to deliver dynamically tailored curriculum 
+            that adapts to your unique learning style, with support for multiple languages including 
+            regional Indian dialects.
           </p>
           <Button href="/features" white>
             Get started
@@ -77,7 +78,7 @@ function Hero() {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Personalized Content"
+                    title="Dynamic Curriculum Tailoring"
                   />
                 </ScrollParallax>
               </div>

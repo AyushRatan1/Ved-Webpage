@@ -15,8 +15,8 @@ const Services = () => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="AI-Driven Learning Made for You"
-          text="Ved AI unlocks the potential of personalized, AI-powered learning experiences"
+          title="AI-Driven Personalized Pedagogy"
+          text="Ved AI creates a symbiotic relationship between teachers and technology"
         />
         <div className="relative">
           <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
@@ -30,10 +30,9 @@ const Services = () => {
               />
             </div>
             <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Personalized Learning</h4>
+              <h4 className="h4 mb-4">Multilingual & Inclusive Learning</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-                Ved AI customizes content to fit each learner's needs, enhancing
-                skill development and engagement.
+                With support for multiple languages including regional Indian dialects, our platform ensures content is accessible and engaging for diverse populations.
               </p>
               <ul className="body-2">
                 {vedAiServices.map((item, index) => (
@@ -61,20 +60,18 @@ const Services = () => {
                 />
               </div>
               <div className="absolute flex justify-end inset-0 flex-col p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Dynamic Profile Enhancement</h4>
+                <h4 className="h4 mb-4">Dynamic Curriculum Tailoring</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Continuously refining profiles for more relevant and
-                  personalized interactions.
+                  Course materials—designed by passionate subject experts—are continuously adapted by our AI, diagnosing your strengths and gaps to create custom learning pathways.
                 </p>
               </div>
               <PhotoChatMessage />
             </div>
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="px-4 xl:px-8">
-                <h4 className="h4 mb-[2rem]">Content Generation</h4>
+                <h4 className="h4 mb-[2rem]">Teacher + AI Symbiosis</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  Experience real-time AI-powered content creation to support
-                  your learning journey.
+                  We combine human expertise with artificial intelligence to create personalized tutoring experiences that reach beyond geographic and socioeconomic boundaries.
                 </p>
                 <ul className="flex items-center justify-between mb-8">
                   {vedAiServicesIcons.map((item, index) => (

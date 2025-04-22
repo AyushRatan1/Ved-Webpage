@@ -73,7 +73,7 @@ export function AnimatedPinDemo() {
           ))}
         </div>
         <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-          <Button href="https://ved-ai-front.vercel.app/">Let's Dive In</Button>
+          <Button href="https://v0-product-launch-waitlist-eight-chi.vercel.app/">Let's Dive In</Button>
         </div>
       </div>
     </section>
