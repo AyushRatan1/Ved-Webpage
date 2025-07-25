@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { createClient } from "@supabase/supabase-js";
 import animationGif from "../assets/animation.gif";
 import physicsKG from "../assets/physicsKG.png";
-import groupSVG from "../assets/Group-1332179016.svg";
+import groupSVG from "../assets/Group-1332179016.png";
 import "../index.css";
 
 const supabaseUrl = 'https://jjqogbuwqlqhgykuicei.supabase.co';
@@ -25,7 +25,7 @@ const ExperiencePage = () => {
   const [demoModalOpen, setDemoModalOpen] = useState(false);
   const [signInModalOpen, setSignInModalOpen] = useState(false);
   const [signUpModalOpen, setSignUpModalOpen] = useState(false);
-  const [demoForm, setDemoForm] = useState({ name: "", email: "", school: "" });
+  const [demoForm, setDemoForm] = useState({ name: "", email: "", school: "", phone: "" });
   const [loading, setLoading] = useState(false);
 
   // Handlers for modals
@@ -36,14 +36,14 @@ const ExperiencePage = () => {
   const handleDemoSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    const { name, email, school } = demoForm;
-    const { error } = await supabase.from('demo_requests').insert([{ name, email, school }]);
+    const { name, email, school, phone } = demoForm;
+    const { error } = await supabase.from('demo_requests').insert([{ name, email, school, phone }]);
     setLoading(false);
     if (error) {
       alert('Error submitting request: ' + error.message);
     } else {
       alert('Thank you for your request! We will be in touch soon.');
-      setDemoForm({ name: "", email: "", school: "" });
+      setDemoForm({ name: "", email: "", school: "", phone: "" });
       setDemoModalOpen(false);
     }
   };
@@ -90,7 +90,7 @@ const ExperiencePage = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-10 gap-8 items-center">
             <div className="text-center md:text-left md:col-span-5">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 extra-loose-leading max-w-3xl">Schools partner with us to give their students the best personal AI Tutor at home</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 extra-loose-leading max-w-3xl">Personal AI tutor to solve doubths at home</h1>
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
                 <button onClick={() => openModal(setDemoModalOpen)} className="bg-indigo-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-indigo-700 w-full sm:w-auto">Book a Live Demo</button>
               </div>
@@ -126,7 +126,7 @@ const ExperiencePage = () => {
                 <div className="flex justify-center items-center h-20 w-20 rounded-full bg-blue-100 mx-auto mb-6">
                   <span className="material-icons text-blue-600 text-4xl">psychology</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4 h-24 flex items-center justify-center">Builds understanding, not dependency on AI</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4 h-24 flex items-center justify-center">Teaches concepts instead of answering directly</h3>
               </div>
               <p className="text-gray-600 mt-auto">Asks questions to teach concepts that are lacking in the student's understanding instead of giving direct answers</p>
             </div>
@@ -164,8 +164,8 @@ const ExperiencePage = () => {
             <div className="md:grid md:grid-cols-2 md:gap-16 items-center mb-24 relative">
               <div className="md:pr-8 text-center md:text-left">
                 <div className="inline-block bg-indigo-600 text-white rounded-full px-4 py-2 mb-4 font-bold">Step 1</div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">Grounded in your course material to always give the right answers</h3>
-                <p className="text-gray-600">Ved ingests everything from your teacher's session plan and scope to assigned exercise answers for reliably giving correct answers from prescribed material.</p>
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">Limits to your course material to always give the right answers</h3>
+                <p className="text-gray-600">Ved absorbs prescribed course material from teacher's session plan to assigned exercises to always give correct answers</p>
               </div>
               <div className="mt-8 md:mt-0 flex items-center justify-center space-x-4">
                 <div className="flex flex-col items-center space-y-4">
@@ -186,16 +186,16 @@ const ExperiencePage = () => {
             <div className="md:grid md:grid-cols-2 md:gap-16 items-center mb-24 relative">
               <div className="md:pl-8 text-center md:text-left md:order-2">
                 <div className="inline-block bg-indigo-600 text-white rounded-full px-4 py-2 mb-4 font-bold">Step 2</div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">Builds understanding rather than giving answers</h3>
-                <p className="text-gray-600">Ved explains each doubt by listing the core concepts, assessing what lacks in student's understanding, and explaining that with dialogue and visuals.</p>
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">Teaches concepts instead of answering directly</h3>
+                <p className="text-gray-600">Ved explains each doubt by figuring out core concepts, assessing what lacks in student's understanding, and explaining that with dialogue and visuals.</p>
               </div>
               <div className="mt-8 md:mt-0 flex flex-col items-center justify-center md:order-1">
                 <div className="space-y-4 w-full max-w-md">
-                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-blue-500 mr-3">lightbulb</span><span>Lists core concepts needed to understand the doubt</span></div>
-                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-yellow-500 mr-3">memory</span><span>Checks memory to judge student's proficiency</span></div>
+                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-blue-500 mr-3">lightbulb</span><span>Figures out core concepts needed to understand the doubt</span></div>
+                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-yellow-500 mr-3">memory</span><span>Uses past conversations to judge student's comfort with a topic</span></div>
                   <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-green-500 mr-3">help_outline</span><span>Asks clarifying questions to get what exactly is lacking in the student's understanding</span></div>
                   <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-red-500 mr-3">visibility</span><span>Explains the missing concepts using dialogue, visualisation and prescribed material</span></div>
-                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-purple-500 mr-3">task_alt</span><span>Confirming understanding with assessing questions</span></div>
+                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-purple-500 mr-3">task_alt</span><span>Confirms understanding with assessing questions</span></div>
                 </div>
               </div>
               <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-indigo-600 border-4 border-white hidden md:block"></div>
@@ -204,8 +204,8 @@ const ExperiencePage = () => {
             <div className="md:grid md:grid-cols-2 md:gap-16 items-center mb-24 relative">
               <div className="md:pr-8 text-center md:text-left">
                 <div className="inline-block bg-indigo-600 text-white rounded-full px-4 py-2 mb-4 font-bold">Step 3</div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">Deeply personalised to each student's proficiency</h3>
-                <p className="text-gray-600">Ved adapts it's difficulty level, approach and focus based on memory of each student's proficiency and learning patterns. Each conversation helps Ved learn what works best for a student.</p>
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">Deeply personalised to each student's ability</h3>
+                <p className="text-gray-600">Ved adapts it's teaching style to each student's ability. Each conversation helps Ved learn what works best for each student.</p>
               </div>
               <div className="mt-8 md:mt-0 flex items-center justify-center">
                 <img alt="Physics illustration" className="rounded-lg w-full max-w-md" src={physicsKG} />
@@ -216,8 +216,8 @@ const ExperiencePage = () => {
             <div className="md:grid md:grid-cols-2 md:gap-16 items-center relative" id="safety">
               <div className="md:pl-8 text-center md:text-left md:order-2">
                 <div className="inline-block bg-indigo-600 text-white rounded-full px-4 py-2 mb-4 font-bold">Step 4</div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">Built for safety and preserving critical thinking</h3>
-                <p className="text-gray-600">Ved comes with strong guardrails to prevent getting direct answers for assigned homework, giving out of scope answers from the internet, and blocking any harmful content.</p>
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">Does not give answers for assigned homework or non-academic queries</h3>
+                <p className="text-gray-600">Ved is designed to be safe and helpful. It avoids homework answers, stays on topic, and blocks bad content.</p>
               </div>
               <div className="mt-8 md:mt-0 flex items-center justify-center md:order-1">
                 <img alt="Safety illustration" className="rounded-lg w-full max-w-md" src={groupSVG} />
@@ -278,6 +278,10 @@ const ExperiencePage = () => {
               <div className="mb-4">
                 <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">Email Address</label>
                 <input type="email" id="email" name="email" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600" required value={demoForm.email} onChange={e => setDemoForm({ ...demoForm, email: e.target.value })} />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="phone" className="block text-gray-700 font-semibold mb-2">Phone Number</label>
+                <input type="text" id="phone" name="phone" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600" required value={demoForm.phone || ''} onChange={e => setDemoForm({ ...demoForm, phone: e.target.value })} />
               </div>
               <div className="mb-4">
                 <label htmlFor="school" className="block text-gray-700 font-semibold mb-2">School/Organization</label>
