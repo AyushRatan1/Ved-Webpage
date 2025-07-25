@@ -90,7 +90,7 @@ const ExperiencePage = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-10 gap-8 items-center">
             <div className="text-center md:text-left md:col-span-5">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 extra-loose-leading max-w-3xl">Personal AI tutor to solve doubths at home</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 extra-loose-leading max-w-3xl">Personal AI tutor to solve doubts at home</h1>
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
                 <button onClick={() => openModal(setDemoModalOpen)} className="bg-indigo-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-indigo-700 w-full sm:w-auto">Book a Live Demo</button>
               </div>
