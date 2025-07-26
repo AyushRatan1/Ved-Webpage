@@ -90,7 +90,7 @@ const ExperiencePage = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-10 gap-8 items-center">
             <div className="text-center md:text-left md:col-span-5">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 extra-loose-leading max-w-3xl">Personal AI tutor to solve doubts at home</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 extra-loose-leading max-w-3xl">Personal AI tutor to solve doubths at home</h1>
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
                 <button onClick={() => openModal(setDemoModalOpen)} className="bg-indigo-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-indigo-700 w-full sm:w-auto">Book a Live Demo</button>
               </div>
@@ -169,11 +169,11 @@ const ExperiencePage = () => {
               </div>
               <div className="mt-8 md:mt-0 flex items-center justify-center space-x-4">
                 <div className="flex flex-col items-center space-y-4">
-                  <div className="flex items-center space-x-2 p-2 bg-white rounded-lg shadow"><span className="material-icons text-blue-500">description</span><span>Session Plan</span></div>
-                  <div className="flex items-center space-x-2 p-2 bg-white rounded-lg shadow"><span className="material-icons text-yellow-500">edit_note</span><span>Student Notes</span></div>
-                  <div className="flex items-center space-x-2 p-2 bg-white rounded-lg shadow"><span className="material-icons text-green-500">menu_book</span><span>Book Chapters</span></div>
-                  <div className="flex items-center space-x-2 p-2 bg-white rounded-lg shadow"><span className="material-icons text-red-500">play_circle</span><span>Videos</span></div>
-                  <div className="flex items-center space-x-2 p-2 bg-white rounded-lg shadow"><span className="material-icons text-purple-500">quiz</span><span>Questions</span></div>
+                  <div className="flex items-center space-x-2 p-2 bg-white rounded-lg shadow"><span className="material-icons text-blue-500">description</span><span className="text-gray-900">Session Plan</span></div>
+                  <div className="flex items-center space-x-2 p-2 bg-white rounded-lg shadow"><span className="material-icons text-yellow-500">edit_note</span><span className="text-gray-900">Student Notes</span></div>
+                  <div className="flex items-center space-x-2 p-2 bg-white rounded-lg shadow"><span className="material-icons text-green-500">menu_book</span><span className="text-gray-900">Book Chapters</span></div>
+                  <div className="flex items-center space-x-2 p-2 bg-white rounded-lg shadow"><span className="material-icons text-red-500">play_circle</span><span className="text-gray-900">Videos</span></div>
+                  <div className="flex items-center space-x-2 p-2 bg-white rounded-lg shadow"><span className="material-icons text-purple-500">quiz</span><span className="text-gray-900">Questions</span></div>
                 </div>
                 <span className="material-icons text-6xl text-gray-400">arrow_forward</span>
                 <div className="flex items-center justify-center h-32 w-32 rounded-full bg-indigo-100">
@@ -191,11 +191,11 @@ const ExperiencePage = () => {
               </div>
               <div className="mt-8 md:mt-0 flex flex-col items-center justify-center md:order-1">
                 <div className="space-y-4 w-full max-w-md">
-                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-blue-500 mr-3">lightbulb</span><span>Figures out core concepts needed to understand the doubt</span></div>
-                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-yellow-500 mr-3">memory</span><span>Uses past conversations to judge student's comfort with a topic</span></div>
-                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-green-500 mr-3">help_outline</span><span>Asks clarifying questions to get what exactly is lacking in the student's understanding</span></div>
-                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-red-500 mr-3">visibility</span><span>Explains the missing concepts using dialogue, visualisation and prescribed material</span></div>
-                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-purple-500 mr-3">task_alt</span><span>Confirms understanding with assessing questions</span></div>
+                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-blue-500 mr-3">lightbulb</span><span className="text-gray-900">Figures out core concepts needed to understand the doubt</span></div>
+                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-yellow-500 mr-3">memory</span><span className="text-gray-900">Uses past conversations to judge student's comfort with a topic</span></div>
+                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-green-500 mr-3">help_outline</span><span className="text-gray-900">Asks clarifying questions to get what exactly is lacking in the student's understanding</span></div>
+                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-red-500 mr-3">visibility</span><span className="text-gray-900">Explains the missing concepts using dialogue, visualisation and prescribed material</span></div>
+                  <div className="flex items-start p-3 bg-white rounded-lg shadow"><span className="material-icons text-purple-500 mr-3">task_alt</span><span className="text-gray-900">Confirms understanding with assessing questions</span></div>
                 </div>
               </div>
               <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-indigo-600 border-4 border-white hidden md:block"></div>
@@ -220,7 +220,7 @@ const ExperiencePage = () => {
                 <p className="text-gray-600">Ved is designed to be safe and helpful. It avoids homework answers, stays on topic, and blocks bad content.</p>
               </div>
               <div className="mt-8 md:mt-0 flex items-center justify-center md:order-1">
-                <img alt="Safety illustration" className="rounded-lg w-full max-w-md" src={groupSVG} />
+                <img alt="Safety illustration" className="rounded-lg w-full max-w-4xl" src={groupSVG} />
               </div>
               <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-indigo-600 border-4 border-white hidden md:block"></div>
             </div>
